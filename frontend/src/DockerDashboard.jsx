@@ -26,7 +26,7 @@ const DockerDashboard = () => {
   const fetchContainers = async () => {
     try {
       setLoading(true);
-      const response = await fetch('http://localhost:3000/api/containers');
+      const response = await fetch('http://localhost:3006/api/containers');
       const data = await response.json();
       setContainers(data);
       setError(null);
